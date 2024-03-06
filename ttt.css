@@ -1,7 +1,22 @@
 /* Your code here */
-
-.ttt ul {
+ul {
     display: flex;
     width: 300px;
-    flex-wrap: wrap;    
+    flex-wrap: wrap;   
+    /* border: 5px solid; */
+    /* background-color: aqua; */
+    padding: 0px;
+    /* margin: 30px auto; */
+}
+
+li {
+    width: 90px;
+    height: 90px;
+    border: 5px solid;
+    background-color: grey;
+    display: flex;
+}
+
+body {
+    box-sizing: content-box;
 }

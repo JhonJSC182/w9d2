@@ -3,6 +3,7 @@ class View {
     this.game = game;
     this.el = el;
     this.setupBoard();
+    this.el.addEventListener('click', this.handleClick);
   }
   
   setupBoard() {
@@ -16,8 +17,8 @@ class View {
           // basically assigning a dynamic [row,col] for every li
           const innerList = document.createElement('li')
           
-          innerList.dataset.row
-          innerList.dataset.column
+          innerList.dataset.row = row
+          innerList.dataset.column = column
          
            //append the li's to the ul 
           board.appendChild(innerList)
@@ -26,11 +27,19 @@ class View {
     //outside of the loop, we append ul to the element
     this.el.appendChild(board)
   }
-  
+  //figure out what position
+  //play it if its valid
+  //add it onto the board
   handleClick(e) {
+    //target is where the position originated
+    e.target.dataset.row;
+    e.target.dataset.column;
+    console.log(e.target);
+
   }
 
   makeMove(square) {
+    
   }
   
   handleGameOver() {
